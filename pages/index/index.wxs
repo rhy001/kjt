@@ -1,0 +1,29 @@
+var carReplacecolor = function (val) {
+  if (val) {
+    var varsplit = val.split("-");
+    switch (varsplit[1]) {
+      case '1':
+        return 'blueCar';
+      case '2':
+        return 'yellowCar';
+      case '3':
+        return 'whiteCar';
+      case '4':
+        return 'blackCar';
+      default:
+        return 'whiteCar';
+    }
+  }
+}
+var carReplaceno = function (val) {
+  if (val) {
+    var varsplit = val.split("-");
+    return varsplit[0];
+  }
+  else
+    return "";
+}
+
+
+module.exports.carReplacecolor = carReplacecolor;
+module.exports.carReplaceno = carReplaceno;

@@ -1,0 +1,4 @@
+<view>{{carinfo.plateNo}}</view >
+<view>{{carinfo.plateNo}}</view >
+<view>{{carinfo.plateNo}}</view >
+<view>{{carinfo.plateNo}}</view >

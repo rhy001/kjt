@@ -1,0 +1,28 @@
+<wxs src="./index.wxs" module="tools" />
+<template name="carList">
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <icon type="info" />
+    </view>
+    <view class="weui-cell__bd" data-hi="{{item}}" bindtap="carDetail">
+      <view class="{{tools.carReplacecolor(item.plateNo)}}"> {{tools.carReplaceno(item.plateNo)}} </view>
+    </view>
+    <view class="weui-cell__ft">{{item.statuName}}</view>
+  </view>
+</template>
+<!--index.wxml-->
+<view class="container">
+  <view class="weui-cells">
+    <block wx:for="{{result}}" wx:key="">
+      <template is="carList" data="{{item}}" />
+    </block>
+    <view class="weui-cell center_text" bindtap="addCar">
+      <image src="../../imgs/add.png" class="addicon"></image>
+      <text>添加车辆</text>
+    </view>
+    <view class="weui-cell center_text" bindtap="myTrips">
+      <image src="../../imgs/myTrips.png" class="myTripsicon"></image>
+      <text>我的行程</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+
+  
+    <view class="kind-list">
+       <view class="kind-list-item">
+          <view class="kind-list-item-hd" id="view">
+            <view class="kind-list-text">视图容器</view>
+            <image class="kind-list-img" src="resources/kind/view.png"></image>
+          </view>
+        </view>
+      </view>
+  
